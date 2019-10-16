@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Photos | Playboi Carti**</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/photoswipe.css"> 
+		<link rel="stylesheet" href="css/default-skin/default-skin.css">
+	</head>
+	<body>
+		<div id="mobile-menu">
+			<span id="mobile-logo"><a href="index.html"><img src="img/logo-dark.png" alt=""></a></span>
+			<span onclick="openNav()" id="open-btn"><i class="material-icons" >menu</i></span>
+		</div>
+		<header id="navbar">
+			<nav>
+				<span id="brand"><a href="index.html"><img src="img/logo-dark.png" alt=""></a></span>
+				<span id="close-btn" onclick="closeNav()"><i class="material-icons" >close</i></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="tour.html">Tour</a></li>
+					<li><a href="photos.html" class="l-active">Photos</a></li>
+					<li><a href="musique.html">Musique</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<span id="shopping-bag-btn" class="dark"><a href="#"><img src="img/bag-dark.png" alt=""></a></span>
+			<span id="shopping-bag-btn" class="light"><a href="#"><img src="img/bag.png" alt=""></a></span>
+		</header>
+		<main class="container">
+			<h1>Photos</h1>
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/Ds9wGxaUUAAJyIy.jpg" itemprop="contentUrl" data-size="1080x1346">
+			            <img src="img/photos/Ds9wGxaUUAAJyIy-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/41318426_169959220546431_4882170025697243612_n.jpg" itemprop="contentUrl" data-size="723x904">
+			            <img src="img/photos/41318426_169959220546431_4882170025697243612_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/35492683_2017826165136013_8940084489455927296_n.jpg" itemprop="contentUrl" data-size="1080x1350">
+			            <img src="img/photos/35492683_2017826165136013_8940084489455927296_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/31130828_223795331702469_3042463972453253120_n.jpg" itemprop="contentUrl" data-size="750x750">
+			            <img src="img/photos/31130828_223795331702469_3042463972453253120_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/29401662_180162462612433_3233775525352701952_n.jpg" itemprop="contentUrl" data-size="1080x1080">
+			            <img src="img/photos/29401662_180162462612433_3233775525352701952_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/17077421_1570844989622215_754530031971074048_n.jpg" itemprop="contentUrl" data-size="1080x1080">
+			            <img src="img/photos/17077421_1570844989622215_754530031971074048_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/21689253_365203847242967_4059339385777160192_n.jpg" itemprop="contentUrl" data-size="1080x1350">
+			            <img src="img/photos/21689253_365203847242967_4059339385777160192_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/15043981_577106789142856_659749410942484480_n.jpg" itemprop="contentUrl" data-size="640x799">
+			            <img src="img/photos/15043981_577106789142856_659749410942484480_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			        <a href="img/photos/13402428_278272312525864_1391774186_n.jpg" itemprop="contentUrl" data-size="640x799">
+			            <img src="img/photos/13402428_278272312525864_1391774186_n-small.jpg" itemprop="thumbnail" alt="Slatt" />
+			        </a>
+			    </figure>
+			</div>
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+			    <!-- Background of PhotoSwipe. 
+			         It's a separate element as animating opacity is faster than rgba(). -->
+			    <div class="pswp__bg"></div>
+
+			    <!-- Slides wrapper with overflow:hidden. -->
+			    <div class="pswp__scroll-wrap">
+
+			        <!-- Container that holds slides. 
+			            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+			            Don't modify these 3 pswp__item elements, data is added later on. -->
+			        <div class="pswp__container">
+			            <div class="pswp__item"></div>
+			            <div class="pswp__item"></div>
+			            <div class="pswp__item"></div>
+			        </div>
+
+			        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			        <div class="pswp__ui pswp__ui--hidden">
+
+			            <div class="pswp__top-bar">
+
+			                <!--  Controls are self-explanatory. Order can be changed. -->
+
+			                <div class="pswp__counter"></div>
+
+			                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+			                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+			                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+			                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+			                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+			                <!-- element will get class pswp__preloader--active when preloader is running -->
+			                <div class="pswp__preloader">
+			                    <div class="pswp__preloader__icn">
+			                      <div class="pswp__preloader__cut">
+			                        <div class="pswp__preloader__donut"></div>
+			                      </div>
+			                    </div>
+			                </div>
+			            </div>
+
+			            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+			                <div class="pswp__share-tooltip"></div> 
+			            </div>
+
+			            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			            </button>
+
+			            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			            </button>
+
+			            <div class="pswp__caption">
+			                <div class="pswp__caption__center"></div>
+			            </div>
+
+			        </div>
+
+			    </div>
+
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>©2018.Cash.Carti</li>
+				<li><a href="mentions-legales.html">Mentions Légales</a></li>
+				<li><a href="plan-du-site.html">Plan du site</a></li>
+			</ul>
+			<ul id="social">
+				<li><a href="https://facebook.com/PlayboiCarti"><img src="img/facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/playboicarti"><img src="img/twitter.png" alt=""></a></li>
+				<li><a href="https://www.instagram.com/playboicarti"><img src="img/instagram.png" alt=""></a></li>
+			</ul>
+		</footer>
+		<script src="js/navbar.js"></script>
+		<script src="js/photoswipe.min.js"></script> 
+		<script src="js/photoswipe-ui-default.min.js"></script>
+		<script src="js/ps-dom.js"></script>
+	</body>
+</html>

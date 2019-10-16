@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact | Playboi Carti**</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<div id="mobile-menu">
+			<span id="mobile-logo"><a href="index.html"><img src="img/logo-dark.png" alt=""></a></span>
+			<span onclick="openNav()" id="open-btn"><i class="material-icons" >menu</i></span>
+		</div>
+		<header id="navbar">
+			<nav>
+				<span id="brand"><a href="index.html"><img src="img/logo-dark.png" alt=""></a></span>
+				<span id="close-btn" onclick="closeNav()"><i class="material-icons" >close</i></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="tour.html">Tour</a></li>
+					<li><a href="photos.html">Photos</a></li>
+					<li><a href="musique.html">Musique</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="contact.html" class="l-active">Contact</a></li>
+				</ul>
+			</nav>
+			<span id="shopping-bag-btn" class="dark"><a href="#"><img src="img/bag-dark.png" alt=""></a></span>
+			<span id="shopping-bag-btn" class="light"><a href="#"><img src="img/bag.png" alt=""></a></span>
+		</header>
+		<main class="container">
+			<h1>Contact</h1>
+			<section id="contact">
+				<form action="contact.html" method="post">
+					<div id="form-group">
+						<label for="nom">Nom<span class="required">*</span></label>
+						<input type="nom" name="nom" id="nom" placeholder="Nom" required>
+					</div>
+					<div id="form-group">
+						<label for="email">Email<span class="required">*</span></label>
+						<input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+					</div>
+					<div id="form-group">
+						<label for="message">Message</label>
+						<textarea rows="6" placeholder="Message"></textarea>
+					</div>
+					<button type="submit">Envoyer</button>
+				</form>
+			</section>
+			<section id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.329947864726!2d-84.38936508447797!3d33.93263843147018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50e831103e89f%3A0xfd6f0abd69c5d87a!2s161+Belmont+Trce+NW%2C+Sandy+Springs%2C+GA+30328%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1543565472097" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</section>
+		</main>
+		<footer>
+			<ul>
+				<li>©2018.Cash.Carti</li>
+				<li><a href="mentions-legales.html">Mentions Légales</a></li>
+				<li><a href="plan-du-site.html">Plan du site</a></li>
+			</ul>
+			<ul id="social">
+				<li><a href="https://facebook.com/PlayboiCarti"><img src="img/facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/playboicarti"><img src="img/twitter.png" alt=""></a></li>
+				<li><a href="https://www.instagram.com/playboicarti"><img src="img/instagram.png" alt=""></a></li>
+			</ul>
+		</footer>
+		<script src="js/navbar.js"></script>
+	</body>
+</html>

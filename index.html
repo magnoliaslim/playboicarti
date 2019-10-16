@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Playboi Carti**</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<div id="mobile-menu">
+			<span id="mobile-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></span>
+			<span onclick="openNav()" id="open-btn" class="acc"><i class="material-icons" >menu</i></span>
+		</div>
+		<header id="navbar">
+			<nav>
+				<span id="brand"><a href="index.html"><img src="img/logo.png" alt=""></a></span>
+				<span id="close-btn" onclick="closeNav()"><i class="material-icons" >close</i></span>
+				<ul id="nav" class="acc">
+					<li><a href="index.html" class="l-active">Accueil</a></li>
+					<li><a href="tour.html">Tour</a></li>
+					<li><a href="photos.html">Photos</a></li>
+					<li><a href="musique.html">Musique</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<span id="acc-shopping-bag-btn"><a href="#"><img src="img/bag.png" alt=""></a></span>
+		</header>
+		<main id="acc" class="container">
+			<section id="slideshow">
+				<div class="overlay"></div>
+				<div class="slides">
+					<div class="slide-img" style="width:100%; background-image: url('img/slides/slide-1.jpg');"></div>
+					<div class="slide-text">
+						<h2>Die Lit disponible</h2>
+						<a href="http://smarturl.it/dielit">Écouter</a>
+					</div>
+				</div>
+				<div class="slides">
+					<div class="slide-img" style="width:100%; background-image: url('img/slides/slide-2.jpg');"></div>
+					<div class="slide-text">
+						<h2>R.I.P</h2>
+						<a href="https://www.youtube.com/watch?v=GRoa6w-wnT4">Regarder</a>
+					</div>
+				</div>
+				<div class="slides">
+					<div class="slide-img" style="width:100%; background-image: url('img/slides/slide-3.jpg');"></div>
+					<div class="slide-text">
+						<h2>Neon Tour</h2>
+						<a href="tour.html">Acheter une place</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<ul>
+				<li>©2018.Cash.Carti</li>
+				<li><a href="mentions-legales.html">Mentions Légales</a></li>
+				<li><a href="plan-du-site.html">Plan du site</a></li>
+			</ul>
+			<ul id="social">
+				<li><a href="https://facebook.com/PlayboiCarti"><img src="img/facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/playboicarti"><img src="img/twitter.png" alt=""></a></li>
+				<li><a href="https://www.instagram.com/playboicarti"><img src="img/instagram.png" alt=""></a></li>
+			</ul>
+		</footer>
+		<script src="js/navbar.js"></script>
+		<script src="js/slideshow.js"></script>
+	</body>
+</html>

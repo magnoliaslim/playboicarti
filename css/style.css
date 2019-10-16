@@ -1,0 +1,653 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	color: #373737;
+	margin: 0;
+	background-color: #e7e7e7;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #e7e7e7;
+}
+
+/* Navbar */
+
+#close-btn, #open-btn {
+	display: none;
+}
+
+#open-btn .material-icons {
+    color: #111;
+    cursor: pointer;
+}
+
+#close-btn .material-icons {
+	color: #e7e7e7;
+	cursor: pointer;
+}
+
+nav {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 4;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	font-weight: 700;
+}
+
+img {
+	display: block;
+}
+
+.l-active {
+	font-weight: 700;
+}
+
+.light {
+	display: none;
+}
+
+#shopping-bag-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 4;
+}
+
+#shopping-bag-btn img {
+	width: 24px;
+}
+
+#mobile-logo {
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 4;
+}
+
+#open-btn {
+	position: fixed;
+	top: 20px;
+	right: 24px;
+	z-index: 4;
+}
+
+nav a {
+	color: #373737;
+}
+
+/* Container */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	min-height: 100%;
+	margin: 0 auto;
+
+}
+
+/* Footer */
+
+footer {
+	font-size: 11px;
+	text-transform: uppercase;
+	background-color: #111;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social img {
+	width: 16px;
+}
+
+footer ul {
+	display: flex;
+	padding: 20px;
+}
+
+footer li {
+	margin-left: 20px;
+	color: #e7e7e7;
+}
+
+footer li:first-child {
+	margin-left: 0;
+}
+
+footer a {
+	color: #e7e7e7;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+	h1 {
+		margin: 20px 0;
+	}
+
+	header {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		transform: translate(-200%, 0);
+		z-index: 4;
+	}
+
+	.hide {
+		transition: 0.5s;
+		transform: translate(-200%, 0);
+	}
+
+	.show {
+		transition: 0.5s;
+		transform: translate(0, 0);
+	}
+
+	nav {
+		display: initial;
+		padding: 20px;
+		height: 100%;
+		width: calc(100% - 40px);
+		margin: 0;
+		top: 0;
+		left: 0;
+	}
+
+	nav a {
+	  color: #e7e7e7;
+	  font-size: 1.5em;
+	  font-weight: 700;
+	}
+
+	#brand {
+		display: none;
+	}
+
+	#mobile-logo {
+		display: initial;
+	}
+
+	#mobile-logo img {
+		width: 52px;
+	}
+
+	#open-btn {
+		display: initial;
+	}
+
+	#close-btn {
+		display: initial;
+		position: absolute;
+		top: 20px;
+		right: 24px;
+	}
+
+	ul {
+		text-align: left;
+	}
+
+	.material-icons {
+		font-size: 28px!important;
+	}
+
+	.light {
+		display: initial;
+	}
+
+	.dark {
+		display: none;
+	}
+
+	#shopping-bag-btn {
+	    position: absolute;
+	    top: initial;
+	    right: 0;
+	    bottom: 0;
+	    margin: 0;
+	    padding: 28px;
+	}
+
+	#shopping-bag-btn img {
+		width: 30px;
+	}
+
+	.container {
+		width: 80%;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+/* Accueil */
+
+.acc a , .acc .material-icons {
+    color: #e7e7e7!important;
+}
+
+#acc {
+	width: 100%;
+}
+
+#acc-shopping-bag-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	z-index: 4;
+}
+
+#acc-shopping-bag-btn img {
+	width: 24px;
+}
+
+#slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  background-color: #000;
+}
+
+.overlay {
+  background-color: #00000066;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.slides {
+    display: none;
+}
+
+.slide-img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+}
+
+.slide-text {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	color: #e7e7e7;
+}
+
+.slide-text a {
+	color: #e7e7e7;
+	border: 2px solid #e7e7e7;
+	padding: 3px 6px;
+}
+
+.slide-text a:hover {
+	background-color: #e7e7e7;
+	color: #373737;
+	transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+	#acc-shopping-bag-btn {
+	    position: absolute;
+	    top: initial;
+	    right: 0;
+	    bottom: 0;
+	    margin: 0;
+	    padding: 28px;
+	}
+
+	#acc-shopping-bag-btn img {
+		width: 30px;
+	}
+}
+
+/* Tour */
+
+#open-btn .material-icons {
+    color: #111;
+}
+
+#dates {
+	width: 100%;
+	margin: auto;
+}
+
+#date {
+	width: 10%;
+}
+
+#city {
+	width: 30%;
+}
+
+#venue {
+	width: 45%;
+}
+
+#tickets {
+	margin-left: auto;
+}
+
+#tickets a {
+	text-decoration: none;
+	color: #373737;
+	border: 2px solid #373737;
+	padding: 3px 6px;
+}
+
+#tickets a:hover {
+	background-color: #373737;
+	color: #e7e7e7;
+	transition: 0.3s;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+	.row > * {
+		margin-bottom: 5px;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 0 50px 0;
+	}
+
+	#date, #city, #venue {
+		width: initial;
+	}
+
+	#tickets {
+		margin: 10px 0 0 0;
+	}
+
+}
+
+/* Musique */
+
+#albums {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+#albums section {
+	width: calc(50% - 7.5px);
+	position: relative;
+}
+
+#albums section:first-child {
+	margin: 0 15px 0 0;
+}
+
+#albums section img {
+	position: relative;
+	width: 100%;
+}
+
+.album-overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.album-overlay:hover {
+	opacity: 1;
+}
+
+.album-overlay a {
+	color: #e7e7e7;
+}
+
+.album-overlay a {
+	border: 2px solid #e7e7e7;
+    padding: 3px 6px;
+}
+
+.album-overlay a:hover {
+	background-color: #e7e7e7;
+    color: #373737;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+	#albums {
+		width: 80%;
+	}
+
+	#albums section {
+    	width: 100%;
+	}
+
+	#albums section:first-child {
+		margin: 0 0 15px 0;
+	}
+
+	.album-overlay {
+		display: none;
+	}
+
+}
+
+/* Shop */
+
+#articles {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+article {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+article img  {
+    width: 100%;
+}
+
+.t-shirt {
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+	#articles {
+		width: 50%;
+	}
+
+	article  {
+    	width: 100%;
+	}
+
+}
+
+/* Contact */
+
+#contact {
+	width: 100%;
+	margin: auto;
+}
+
+form {
+	width: 100%;
+}
+
+#form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+label {
+	font-size: 14px;
+}
+
+.required {
+	color: red;
+}
+
+input, textarea {
+	/* text-transform: uppercase; */
+	font-size: 14px;
+	background: none;
+	border: 0;
+	border-bottom: 4px solid #757575;
+	color: #373737;
+	padding: 5px;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+	outline: 0;
+	border-bottom: 4px solid #373737;
+	transition: 0.3s;
+}
+
+button {
+	text-transform: uppercase;
+	color: #373737;
+	border: 2px solid #757575;
+	padding: 3px 6px;
+}
+
+button:hover {
+	background-color: #373737;
+	color: #e7e7e7;
+	border: 2px solid #373737;
+	transition: 0.3s;
+}
+
+#map, #map iframe {
+  width: 100%;
+  margin: 25px 0;
+ }
+
+/* Site Map */
+
+#sitemap h2 {
+	font-size: 1.1em;
+	color: #373737;
+}
+
+#sitemap ul {
+	text-align: center;
+}
+
+#sitemap a {
+	color: #373737;
+}
+
+/* Mentions Légales */
+
+#mentions-legales {
+	text-align: center;
+}
+
+#mentions-legales h2 {
+	color: #373737;
+}
+
+/* Photos */
+
+.my-gallery {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+figure {
+	width: calc(33% - 15px);
+    margin: 0 15px 15px 0;
+}
+
+figure img {
+	width: 100%;
+	filter: saturate(0.5);
+}
+
+figure img:hover {
+	filter: saturate(1);
+	transition: 0.3s;
+} 
+
+@media (max-width: 576px) {
+
+	figure {
+		width: calc(80% - 15px);
+		margin: 0 0 15px 0;
+	}
+
+}
